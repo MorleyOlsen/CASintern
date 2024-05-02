@@ -68,11 +68,11 @@ w小，表示更趋近C_t空间（私有目标标签）
 
 d1的损失函数
 
-![71446798067](Universal Source-Free Domain Adaptation.assets/1714467980674.png)
+![71446798067](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714467980674.png)
 
 d2的损失函数
 
-![71446799921](Universal Source-Free Domain Adaptation.assets/1714467999219.png)
+![71446799921](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714467999219.png)
 
 H是信息熵，s for source, t for target
 
@@ -204,15 +204,15 @@ $$
 
 UDA分类（根据source model和source data的可访问性）
 
-![71462848088](Universal Source-Free Domain Adaptation.assets/1714628480885.png)
+![71462848088](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714628480885.png)
 
 mind-map
 
-![71462866642](Universal Source-Free Domain Adaptation.assets/1714628666429.png)
+![71462866642](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714628666429.png)
 
 **white box SFUDA**：
 
-![71463525376](Universal Source-Free Domain Adaptation.assets/1714635253763.png)
+![71463525376](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714635253763.png)
 
 **（1）Data Generation**
 
@@ -224,13 +224,13 @@ mind-map
 
 > 可结合循环学习circular learning
 
-![71463091392](Universal Source-Free Domain Adaptation.assets/1714630913925.png)
+![71463091392](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714630913925.png)
 
 （1.1.2）Surrogate Source Data Construction
 
 首先通过从目标域中选择合适的样本来构建代理/代理源数据，然后执行标准的UDA
 
-![71463102534](Universal Source-Free Domain Adaptation.assets/1714631025346.png)
+![71463102534](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714631025346.png)
 
 （1.1.3）Generative Adversarial Network, GAN
 
@@ -238,7 +238,7 @@ mind-map
 
 > 可能存在模式崩溃，需要精调学习率、manifold-guided training、virtual mapping等方法缓解
 
-![71463118481](Universal Source-Free Domain Adaptation.assets/1714631184813.png)
+![71463118481](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714631184813.png)
 
 （1.2）Domain distribution generation
 
@@ -256,7 +256,7 @@ mind-map
 
 > dual-student framework？
 
-![71463433949](Universal Source-Free Domain Adaptation.assets/1714634339498.png)
+![71463433949](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714634339498.png)
 
 （2.2）domain alignment via statistics
 
@@ -274,7 +274,7 @@ mind-map
 >
 > cross-domain statistics controlling
 
-![71463450551](Universal Source-Free Domain Adaptation.assets/1714634505511.png)
+![71463450551](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714634505511.png)
 
 （2.3）contrastive learning
 
@@ -292,17 +292,17 @@ mind-map
 
 动态混合目标数据的强增强和弱增强
 
-![71463461822](Universal Source-Free Domain Adaptation.assets/1714634618228.png)
+![71463461822](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714634618228.png)
 
 （2.4）uncertainty-guided adaptation
 
-![71463478423](Universal Source-Free Domain Adaptation.assets/1714634784237.png)
+![71463478423](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714634784237.png)
 
 （2.5）hidden structure mining 
 
 目标域的内在特征结构，聚类质心更新迭代
 
-![71463482632](Universal Source-Free Domain Adaptation.assets/1714634826321.png)
+![71463482632](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714634826321.png)
 
 
 
@@ -356,7 +356,7 @@ teacher–student-style network
 
 **常用数据集**
 
-![71463898210](Universal Source-Free Domain Adaptation.assets/1714638982105.png)
+![71463898210](https://github.com/MorleyOlsen/CASintern/blob/main/period1/Universal%20Source-Free%20Domain%20Adaptation.assets/1714638982105.png)
 
 
 
