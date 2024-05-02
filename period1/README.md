@@ -8,7 +8,7 @@ from source domain(labeled) to target domain (unlabeled)
 
 各种source-target label-set relationship（如下图）
 
-![71446143210](Universal Source-Free Domain Adaptation.assets/1714461432104.png)
+![71446143210](period1/Universal Source-Free Domain Adaptation.assets/1714461432104.png)
 
 【two-stage learning process】
 
