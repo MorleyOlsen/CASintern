@@ -1,0 +1,159 @@
+2024-05-16 06:33:23,359 [DEBUG] - 
+==========================================
+pythontrain_source.py --dataset OfficeHome --s_idx 0 --target_label_type OPDA --epochs 50 --lr 0.01
+dataset:OfficeHome
+backbone_arch:resnet50
+embed_feat_dim:256
+s_idx:0
+t_idx:1
+checkpoint:None
+epochs:50
+lr:0.01
+gpu:0
+num_workers:6
+batch_size:64
+weight_decay:0.001
+test:False
+seed:2021
+lam_psd:0.3
+lam_knn:1.0
+local_K:4
+w_0:0.55
+rho:0.75
+source_train_type:smooth
+target_label_type:OPDA
+target_private_class_num:50
+note:GLC_CVPR23
+source_data_dir:./data/OfficeHome/Art
+target_data_dir:./data/OfficeHome/Clipart
+target_domain_list:['Clipart', 'Product', 'Realworld']
+target_domain_dir_list:['./data/OfficeHome/Clipart', './data/OfficeHome/Product', './data/OfficeHome/Realworld']
+shared_class_num:10
+source_private_class_num:5
+source_class_num:15
+target_class_num:60
+class_num:15
+source_class_list:[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+target_class_list:[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 15]
+save_dir:./checkpoints_glc/OfficeHome/source_0/source_smooth_OPDA
+==========================================
+
+2024-05-16 06:33:30,241 [INFO] - 
+=================================================
+    START TRAINING ON THE SOURCE:0 == OPDA         
+=================================================
+2024-05-16 06:33:35,388 [INFO] - Epoch:0/50 train_loss:2.002
+2024-05-16 06:33:37,477 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.862, UnknownAcc:0.000
+2024-05-16 06:33:41,764 [INFO] - Epoch:1/50 train_loss:1.009
+2024-05-16 06:33:43,858 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.943, UnknownAcc:0.000
+2024-05-16 06:33:48,124 [INFO] - Epoch:2/50 train_loss:0.845
+2024-05-16 06:33:50,230 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.964, UnknownAcc:0.000
+2024-05-16 06:33:54,640 [INFO] - Epoch:3/50 train_loss:0.780
+2024-05-16 06:33:56,789 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.980, UnknownAcc:0.000
+2024-05-16 06:34:01,143 [INFO] - Epoch:4/50 train_loss:0.734
+2024-05-16 06:34:03,242 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.991, UnknownAcc:0.000
+2024-05-16 06:34:07,874 [INFO] - Epoch:5/50 train_loss:0.716
+2024-05-16 06:34:10,140 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.999, UnknownAcc:0.000
+2024-05-16 06:34:15,234 [INFO] - Epoch:6/50 train_loss:0.689
+2024-05-16 06:34:17,675 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.999, UnknownAcc:0.000
+2024-05-16 06:34:22,859 [INFO] - Epoch:7/50 train_loss:0.677
+2024-05-16 06:34:25,832 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:34:31,358 [INFO] - Epoch:8/50 train_loss:0.668
+2024-05-16 06:34:33,825 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:34:39,602 [INFO] - Epoch:9/50 train_loss:0.653
+2024-05-16 06:34:42,009 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:34:48,703 [INFO] - Epoch:10/50 train_loss:0.653
+2024-05-16 06:34:51,444 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:34:59,421 [INFO] - Epoch:11/50 train_loss:0.643
+2024-05-16 06:35:01,933 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:35:10,742 [INFO] - Epoch:12/50 train_loss:0.637
+2024-05-16 06:35:13,273 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:35:22,043 [INFO] - Epoch:13/50 train_loss:0.636
+2024-05-16 06:35:24,675 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:35:34,438 [INFO] - Epoch:14/50 train_loss:0.635
+2024-05-16 06:35:37,378 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:35:47,608 [INFO] - Epoch:15/50 train_loss:0.634
+2024-05-16 06:35:51,110 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:36:00,881 [INFO] - Epoch:16/50 train_loss:0.635
+2024-05-16 06:36:04,038 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:36:14,131 [INFO] - Epoch:17/50 train_loss:0.625
+2024-05-16 06:36:17,782 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:36:28,224 [INFO] - Epoch:18/50 train_loss:0.628
+2024-05-16 06:36:32,258 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:36:42,771 [INFO] - Epoch:19/50 train_loss:0.625
+2024-05-16 06:36:46,827 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:36:57,446 [INFO] - Epoch:20/50 train_loss:0.623
+2024-05-16 06:37:01,464 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:37:12,075 [INFO] - Epoch:21/50 train_loss:0.623
+2024-05-16 06:37:16,087 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:37:26,750 [INFO] - Epoch:22/50 train_loss:0.617
+2024-05-16 06:37:30,762 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:37:41,484 [INFO] - Epoch:23/50 train_loss:0.619
+2024-05-16 06:37:45,810 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:37:56,550 [INFO] - Epoch:24/50 train_loss:0.618
+2024-05-16 06:38:00,605 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:38:11,357 [INFO] - Epoch:25/50 train_loss:0.618
+2024-05-16 06:38:15,661 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:38:26,520 [INFO] - Epoch:26/50 train_loss:0.622
+2024-05-16 06:38:30,685 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:38:41,450 [INFO] - Epoch:27/50 train_loss:0.620
+2024-05-16 06:38:45,637 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:38:56,695 [INFO] - Epoch:28/50 train_loss:0.617
+2024-05-16 06:39:00,978 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:39:11,732 [INFO] - Epoch:29/50 train_loss:0.614
+2024-05-16 06:39:15,887 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:39:26,625 [INFO] - Epoch:30/50 train_loss:0.614
+2024-05-16 06:39:30,744 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:39:41,575 [INFO] - Epoch:31/50 train_loss:0.615
+2024-05-16 06:39:45,682 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:39:56,537 [INFO] - Epoch:32/50 train_loss:0.611
+2024-05-16 06:40:00,618 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:40:11,374 [INFO] - Epoch:33/50 train_loss:0.609
+2024-05-16 06:40:15,463 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:40:26,239 [INFO] - Epoch:34/50 train_loss:0.608
+2024-05-16 06:40:30,332 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:40:41,092 [INFO] - Epoch:35/50 train_loss:0.613
+2024-05-16 06:40:45,200 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:40:55,987 [INFO] - Epoch:36/50 train_loss:0.608
+2024-05-16 06:41:00,080 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:41:10,837 [INFO] - Epoch:37/50 train_loss:0.608
+2024-05-16 06:41:14,950 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:41:25,700 [INFO] - Epoch:38/50 train_loss:0.607
+2024-05-16 06:41:30,038 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:41:40,876 [INFO] - Epoch:39/50 train_loss:0.606
+2024-05-16 06:41:44,956 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:41:55,735 [INFO] - Epoch:40/50 train_loss:0.608
+2024-05-16 06:42:00,049 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:42:10,864 [INFO] - Epoch:41/50 train_loss:0.611
+2024-05-16 06:42:14,969 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:42:25,992 [INFO] - Epoch:42/50 train_loss:0.606
+2024-05-16 06:42:30,117 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:42:40,872 [INFO] - Epoch:43/50 train_loss:0.608
+2024-05-16 06:42:45,003 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:42:55,783 [INFO] - Epoch:44/50 train_loss:0.605
+2024-05-16 06:43:00,078 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:43:10,909 [INFO] - Epoch:45/50 train_loss:0.604
+2024-05-16 06:43:15,049 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:43:25,812 [INFO] - Epoch:46/50 train_loss:0.604
+2024-05-16 06:43:30,014 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:43:40,776 [INFO] - Epoch:47/50 train_loss:0.605
+2024-05-16 06:43:44,870 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:43:55,691 [INFO] - Epoch:48/50 train_loss:0.607
+2024-05-16 06:43:59,770 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:44:10,547 [INFO] - Epoch:49/50 train_loss:0.606
+2024-05-16 06:44:14,664 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:1.000, UnknownAcc:0.000
+2024-05-16 06:44:14,813 [INFO] - 
+=================================================
+        EVALUATE ON THE TARGET:Clipart                  
+=================================================
+2024-05-16 06:44:33,749 [INFO] - H-Score:0.473, KnownAcc:0.322, UnknownACC:0.886
+2024-05-16 06:44:33,750 [INFO] - 
+=================================================
+        EVALUATE ON THE TARGET:Product                  
+=================================================
+2024-05-16 06:44:52,703 [INFO] - H-Score:0.716, KnownAcc:0.638, UnknownACC:0.817
+2024-05-16 06:44:52,703 [INFO] - 
+=================================================
+        EVALUATE ON THE TARGET:Realworld                  
+=================================================
+2024-05-16 06:45:29,187 [INFO] - H-Score:0.819, KnownAcc:0.824, UnknownACC:0.814
